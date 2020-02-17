@@ -18,7 +18,7 @@ java com.test.breakWord2.App
 
 运行结果：
 
-（遇到匹配不到词的情况用了 ‘ 连接符连接，明显一点）
+（遇到匹配不到词的情况用了 ‘ 标识，明显一点）
 
 
 个人词典：
@@ -37,34 +37,35 @@ ilikesamsungmobileicecreamman go
 
 只匹配个人词典结果：
 
- i like sam sung mobile i‘c‘e cream man go
+ i like sam sung mobile i c’ e’ cream man go
 
  i like sam sung mobile ice cream man go
 
- i like samsung mobile i‘c‘e cream man go
+ i like samsung mobile i c’ e’ cream man go
 
  i like samsung mobile ice cream man go
 
 
 只匹配用户自定义词典结果：
 
- i like sam sung mobile i‘c‘e‘c‘r‘e‘a‘m man go
+ i like sam sung mobile i c’ e’ c’ r’ e’ a’ m’ man go
 
  i like sam sung mobile icecream man go
 
 
 匹配个人词典与用户自定义词典结果：
 
- i like sam sung mobile i‘c‘e cream man go
+ i like sam sung mobile i c’ e’ cream man go
 
  i like sam sung mobile ice cream man go
 
  i like sam sung mobile icecream man go
 
- i like samsung mobile i‘c‘e cream man go
+ i like samsung mobile i c’ e’ cream man go
 
  i like samsung mobile ice cream man go
 
  i like samsung mobile icecream man go
+
 
 

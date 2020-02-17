@@ -138,10 +138,10 @@ class BreakWord
    		if(!isInDict) {
    			int afterPos = pos + this.dictMixWordLen - 1;
    			if(afterPos >= this.inputStr.length() - 1) {
-   				this.outputLine.add(preStr + "’" + this.inputStr.substring(pos, this.inputStr.length()));
+   				this.outputLine.add(preStr + " " + this.inputStr.substring(pos, this.inputStr.length()) + "’");
     			return;
    			} else {
-   				this.nestBreakWord(preStr + "‘" + this.inputStr.substring(pos, afterPos + 1), afterPos + 1);
+   				this.nestBreakWord(preStr + " " + this.inputStr.substring(pos, afterPos + 1) + "’", afterPos + 1);
    			}
    		}
     }
